@@ -195,8 +195,11 @@ axios.get('https://jsonplaceholder.typicode.com/posts').then(function(response) 
   if(response.status === 200) {
     const postData = response.data;
     console.log(postData);
+    
+    localStorage.setItem('postData', postData);
   }
 })
+
 },{"axios":3,"uniq":30}],3:[function(require,module,exports){
 module.exports = require('./lib/axios');
 },{"./lib/axios":5}],4:[function(require,module,exports){
