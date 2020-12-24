@@ -195,8 +195,8 @@ axios.get('https://jsonplaceholder.typicode.com/posts').then(function(response) 
   if(response.status === 200) {
     const postData = response.data;
     console.log(postData);
-    
-    localStorage.setItem('postData', postData);
+
+    // localStorage.setItem('postData', postData);
   }
 })
 
